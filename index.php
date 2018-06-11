@@ -4,7 +4,6 @@ if (empty($session_id))
 {
     session_start();
 }
-<?php
 
 $curl = curl_init();
 
