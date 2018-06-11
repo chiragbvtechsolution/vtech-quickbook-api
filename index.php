@@ -8,7 +8,7 @@ if (empty($session_id))
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://appcenter.intuit.com/connect/oauth2?client_id=Q05RXWzG1pISXjitCttiPIBsQVrFXbDWHebgFVkLnZkxHFUkQR&response_type=code&scope=com.intuit.quickbooks.accounting&redirect_uri=https%3A%2F%2Fvtech-quickbook-api.herokuapp.com%2Foauth-redirect.php&state=security_token%3D138r5719ru3e1%26url%3Dhttps%3A%2F%2Fvtech-quickbook-api.herokuapp.com%2Foauth-redirect.php",
+  CURLOPT_URL => "https://appcenter.intuit.com/connect/oauth2?client_id=Q05RXWzG1pISXjitCttiPIBsQVrFXbDWHebgFVkLnZkxHFUkQR&response_type=code&scope=com.intuit.quickbooks.accounting&redirect_uri=https%3A%2F%2Fvtech-quickbook-api.herokuapp.com%2Foauth-redirect&state=security_token%3D138r5719ru3e1%26url%3Dhttps%3A%2F%2Fvtech-quickbook-api.herokuapp.com%2Foauth-redirect",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
