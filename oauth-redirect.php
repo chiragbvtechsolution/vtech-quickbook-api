@@ -5,14 +5,10 @@ if (empty($session_id))
     session_start();
 }
 
-
-  $_SESSION['code'] = $_GET['code'];
-  $_SESSION['realmId'] = $_GET['realmId'];
-
   $myfile = fopen("token.txt", "w") or die("Unable to open file!");
-  $txt = "$_GET['code']\n";
+  $txt = $_GET['code'];
   fwrite($myfile, $txt);
-  $txt = "$_GET['realmId']\n";
+  $txt = $_GET['realmId'];
   fwrite($myfile, $txt);
   fclose($myfile);
 ?>
