@@ -10,9 +10,9 @@ if (empty($session_id))
   $_SESSION['realmId'] = $_GET['realmId'];
 
   $myfile = fopen("token.txt", "w") or die("Unable to open file!");
-  $txt = "John Doe\n";
+  $txt = "$_GET['code']\n";
   fwrite($myfile, $txt);
-  $txt = "Jane Doe\n";
+  $txt = "$_GET['realmId']\n";
   fwrite($myfile, $txt);
   fclose($myfile);
 ?>
