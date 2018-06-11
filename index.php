@@ -29,9 +29,10 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
-  echo $response;
-}
+  echo $_SESSION['code'];
+  echo '<br>';
+  echo $_SESSION['realmId'];
 
-echo $_SESSION['code'];
-echo '<br>';
-echo $_SESSION['realmId'];
+  echo '<br>';
+  echo 'Good';
+}
